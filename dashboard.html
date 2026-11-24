@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-UG">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111747" />
+  <meta name="description" content="NSTMS school workspace prototype for planning and managing safer school trips." />
+  <title>School Dashboard | NSTMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="app-page">
+  <div class="app-shell">
+    <aside class="app-sidebar">
+      <a class="brand brand-sidebar" href="./index.html"><span class="brand-mark"><svg viewBox="0 0 64 72"><path d="M32 3 57 11v22c0 16-10 28-25 36C17 61 7 49 7 33V11L32 3Z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M20 29a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm12-4a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm12 4a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM13 43c0-6 4-9 9-9s9 3 9 9v5H13v-5Zm13 0c0-6 2-9 6-9s7 3 7 9v5H26v-5Zm9 0c0-6 4-9 9-9s8 3 8 9v5H35v-5Z" fill="currentColor"/></svg></span><span class="brand-copy"><strong>NSTMS</strong><small>Safe Tours. Bright Future.</small></span></a>
+      <div class="sidebar-role"><span class="role-dot"></span> SCHOOL PORTAL</div>
+      <nav class="sidebar-nav" aria-label="School dashboard navigation">
+        <a class="sidebar-link active" href="./dashboard.html"><span class="side-icon">▦</span> Dashboard</a>
+        <a class="sidebar-link" href="#school-profile"><span class="side-icon">⌂</span> My School</a>
+        <a class="sidebar-link" href="#tour-management"><span class="side-icon">▣</span> Tour Management <span class="side-chevron">⌄</span></a>
+        <a class="sidebar-link" href="#safety"><span class="side-icon">▰</span> Drivers &amp; Vehicles</a>
+        <a class="sidebar-link" href="#safety"><span class="side-icon">⬟</span> Safety Inspections</a>
+        <a class="sidebar-link" href="#reports"><span class="side-icon">▤</span> Reports</a>
+        <a class="sidebar-link" href="#notifications"><span class="side-icon">♧</span> Notifications <span class="nav-count">3</span></a>
+        <a class="sidebar-link" href="#settings"><span class="side-icon">⚙</span> Settings</a>
+        <a class="sidebar-link" href="#help"><span class="side-icon">?</span> Help &amp; Support</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-safety-card"><span class="safety-emblem">✓</span><strong>Safety starts before departure.</strong><small>Plan ahead. Check every detail.</small></div>
+        <a class="sidebar-link logout-link" href="./index.html"><span class="side-icon">⇥</span> Sign out</a>
+      </div>
+    </aside>
+
+    <div class="app-main-wrap">
+      <header class="app-topbar">
+        <div class="mobile-brand"><span class="brand-mark"><svg viewBox="0 0 64 72"><path d="M32 3 57 11v22c0 16-10 28-25 36C17 61 7 49 7 33V11L32 3Z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M20 29a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm12-4a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm12 4a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" fill="currentColor"/></svg></span><strong>NSTMS</strong></div>
+        <form class="top-search" role="search"><span>⌕</span><input type="search" placeholder="Search tours, drivers, vehicles..." aria-label="Search dashboard" /></form>
+        <div class="topbar-actions"><span class="demo-chip">DEMO DATA</span><a class="notification-button" href="#notifications" aria-label="Notifications">♧<b>3</b></a><div class="profile-menu"><span class="avatar">JD</span><span><strong>John Doe</strong><small>School Admin</small></span><span class="profile-chevron">⌄</span></div></div>
+      </header>
+
+      <main class="dashboard-content">
+        <div class="page-title-row">
+          <div><div class="breadcrumb">Workspace <span>/</span> School portal</div><h1>Dashboard</h1><p>Welcome back, John! Manage school tours, ensure safety and stay compliant.</p></div>
+          <div class="date-chip"><span>▦</span> Tuesday, 24 November 2026</div>
+        </div>
+
+        <section class="metric-grid" aria-label="School overview">
+          <article class="metric-card metric-purple" id="school-profile"><div class="metric-top"><span class="metric-icon">⌂</span><span class="metric-mini-icon">✓</span></div><span class="metric-label">My School Registration</span><strong class="metric-status">Active <span class="status-check">✓</span></strong><small>Demo school profile</small></article>
+          <article class="metric-card metric-blue"><div class="metric-top"><span class="metric-icon">▦</span><span class="metric-trend">Next 30 days</span></div><span class="metric-label">Upcoming Tours</span><strong class="metric-number">2</strong><small>Scheduled trips</small></article>
+          <article class="metric-card metric-teal"><div class="metric-top"><span class="metric-icon">♙</span><span class="metric-trend">On record</span></div><span class="metric-label">Verified Drivers</span><strong class="metric-number">5</strong><small>Records marked verified</small></article>
+          <article class="metric-card metric-amber"><div class="metric-top"><span class="metric-icon">⬟</span><span class="metric-trend">Readiness</span></div><span class="metric-label">Safety Status</span><strong class="metric-status">Good</strong><small>Demo readiness indicator</small></article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid-main">
+          <article class="panel chart-panel" id="reports">
+            <div class="panel-heading"><div><h2>Tour Overview</h2><p>School tour activity by month</p></div><span class="select-like">Last 6 months <span>⌄</span></span></div>
+            <div class="chart-legend"><span><i></i> Submitted trips</span><span class="legend-muted">Illustrative figures</span></div>
+            <div class="bar-chart" role="img" aria-label="Illustrative bar chart of tour submissions from June to November">
+              <div class="chart-y-labels"><span>6</span><span>4</span><span>2</span><span>0</span></div>
+              <div class="chart-plot"><div class="chart-grid-lines"><i></i><i></i><i></i><i></i></div><div class="bar-column"><b style="--bar-height:30%"></b><small>Jun</small></div><div class="bar-column"><b style="--bar-height:42%"></b><small>Jul</small></div><div class="bar-column"><b style="--bar-height:58%"></b><small>Aug</small></div><div class="bar-column"><b style="--bar-height:48%"></b><small>Sep</small></div><div class="bar-column"><b style="--bar-height:72%"></b><small>Oct</small></div><div class="bar-column"><b style="--bar-height:90%"></b><small>Nov</small></div></div>
+            </div>
+            <div class="chart-footnote">Sample data for interface demonstration only; replace with approved live reporting data.</div>
+          </article>
+          <article class="panel quick-panel" id="tour-management">
+            <div class="panel-heading"><div><h2>Quick Actions</h2><p>Common school tasks</p></div><span class="panel-heading-icon">✦</span></div>
+            <div class="quick-actions-grid">
+              <a class="quick-action" href="#tour-management"><span class="quick-action-icon purple-icon">▦＋</span><strong>Register Tour</strong><small>Submit a new trip</small></a>
+              <a class="quick-action" href="#safety"><span class="quick-action-icon blue-icon">♙＋</span><strong>Add Driver</strong><small>Enter driver details</small></a>
+              <a class="quick-action" href="#safety"><span class="quick-action-icon teal-icon">▰＋</span><strong>Upload Documents</strong><small>Vehicle records</small></a>
+              <a class="quick-action" href="#reports"><span class="quick-action-icon violet-icon">▥</span><strong>View Reports</strong><small>Review trip activity</small></a>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid dashboard-grid-lower">
+          <article class="panel activity-panel" id="notifications">
+            <div class="panel-heading"><div><h2>Recent Activities</h2><p>Latest actions recorded in the school portal</p></div><a class="text-link" href="#all-activities">View all →</a></div>
+            <div class="activity-list">
+              <div class="activity-row"><span class="activity-icon activity-success">✓</span><div><strong>Tour to Mbarara submitted</strong><small>Trip ref: DEMO-2026-1187 · Awaiting review</small></div><time>2 hours ago</time></div>
+              <div class="activity-row"><span class="activity-icon activity-info">♙</span><div><strong>Driver record updated</strong><small>Driver profile · Document review pending</small></div><time>3 hours ago</time></div>
+              <div class="activity-row"><span class="activity-icon activity-purple">▦</span><div><strong>Parent consent reminder prepared</strong><small>Kampala learning tour · 18 learners</small></div><time>5 hours ago</time></div>
+              <div class="activity-row"><span class="activity-icon activity-warning">!</span><div><strong>Vehicle inspection due</strong><small>Vehicle: DEMO-UBX 421K · Check status</small></div><time>Yesterday</time></div>
+            </div>
+          </article>
+          <article class="safety-promo-card">
+            <img src="./assets/school-trip-hero.jpg" alt="Students preparing for a supervised school journey" />
+            <div class="safety-promo-overlay"><span class="promo-kicker">NSTMS SAFETY STANDARD</span><h2>Safe School Tours for a Brighter Future</h2><p>Let's work together to protect every learner on every journey.</p><a href="./index.html#how-it-works" class="button button-light button-small">View guidelines →</a></div>
+          </article>
+        </section>
+
+        <section class="school-checklist-panel panel" id="safety">
+          <div class="panel-heading"><div><h2>Trip Readiness Checklist</h2><p>Review key actions before submitting a tour for consideration.</p></div><span class="outline-status">4 areas to review</span></div>
+          <div class="checklist-grid">
+            <div class="checklist-item"><span class="check-circle check-done">✓</span><span><strong>School profile</strong><small>Profile details entered</small></span><span class="check-state">Demo complete</span></div>
+            <div class="checklist-item"><span class="check-circle check-pending">!</span><span><strong>Learner manifest</strong><small>Confirm final learner list</small></span><span class="check-state pending-text">Review needed</span></div>
+            <div class="checklist-item"><span class="check-circle check-pending">!</span><span><strong>Parent / guardian consent</strong><small>Track submitted permissions</small></span><span class="check-state pending-text">Review needed</span></div>
+            <div class="checklist-item"><span class="check-circle check-pending">!</span><span><strong>Transport documents</strong><small>Check validity and inspection status</small></span><span class="check-state pending-text">Review needed</span></div>
+          </div>
+          <p class="compliance-note"><strong>Important:</strong> This checklist is an administrative aid. It does not certify a vehicle, verify an official licence or replace a statutory inspection or approval.</p>
+        </section>
+
+        <section class="ministry-note-strip"><span class="note-shield">✓</span><div><strong>NSTMS — A coordinated national school travel safety initiative</strong><small>Supporting safer, well-planned and accountable school travel across Uganda.</small></div><a href="./ministry-dashboard.html">Ministry demo <span>→</span></a></section>
+        <div class="dashboard-disclaimer">Prototype workspace · All names, dates, counts, registrations and activities shown are illustrative sample data.</div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
