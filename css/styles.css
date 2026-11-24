@@ -3200,3 +3200,510 @@ summary:focus-visible {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* Presentation-ready type scale and readable supporting text */
+:root {
+  --muted: #56617f;
+  --muted-light: #687493;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+small {
+  font-size: 13px;
+}
+
+.brand-copy small,
+.brand-footer .brand-copy small,
+.brand-sidebar .brand-copy small {
+  font-size: 12px;
+}
+
+.button-small,
+.button-large {
+  font-size: 14px;
+}
+
+.nav-link,
+.back-home,
+.mobile-login {
+  font-size: 14px;
+}
+
+.eyebrow,
+.sidebar-role,
+.demo-chip,
+.promo-kicker {
+  font-size: 12px;
+}
+
+.hero-description {
+  font-size: 16px;
+}
+
+.hero-image-label strong {
+  font-size: 14px;
+}
+
+.hero-image-label small,
+.impact-card small,
+.section-heading p,
+.feature-card p,
+.step-item small,
+.process-note,
+.faq-copy p,
+.faq-list details p,
+.banner-copy p {
+  color: #4e5a78;
+  font-size: 14px;
+}
+
+.feature-card h3 {
+  font-size: 16px;
+}
+
+.step-item strong {
+  font-size: 14px;
+}
+
+.faq-list summary {
+  font-size: 15px;
+}
+
+.footer-column h3 {
+  font-size: 15px;
+}
+
+.footer-column a,
+.footer-column span {
+  font-size: 13px;
+}
+
+.demo-disclaimer {
+  color: #d3dcf8;
+  font-size: 12px;
+}
+
+.footer-bottom,
+.footer-bottom strong {
+  font-size: 12px;
+}
+
+.sidebar-link {
+  font-size: 13px;
+}
+
+.sidebar-safety-card strong {
+  font-size: 13px;
+}
+
+.sidebar-safety-card small,
+.profile-menu small {
+  font-size: 12px;
+}
+
+.top-search input {
+  font-size: 14px;
+}
+
+.demo-chip,
+.breadcrumb,
+.date-chip,
+.metric-trend,
+.metric-label,
+.metric-card > small,
+.chart-legend,
+.legend-muted,
+.chart-y-labels,
+.bar-column small,
+.chart-footnote,
+.quick-action strong,
+.quick-action small,
+.activity-row strong,
+.activity-row small,
+.activity-row time,
+.text-link,
+.outline-status,
+.checklist-item strong,
+.checklist-item small,
+.check-state,
+.compliance-note,
+.ministry-note-strip strong,
+.ministry-note-strip small,
+.ministry-note-strip > a,
+.dashboard-disclaimer,
+.oversight-notice strong,
+.oversight-notice small,
+.priority-list strong,
+.priority-list small,
+.table-wrap th,
+.table-wrap td,
+.table-wrap td strong,
+.table-badge,
+.table-action,
+.table-note {
+  font-size: 13px;
+}
+
+.page-title-row p,
+.panel-heading p,
+.ministry-policy-card p {
+  color: #53607e;
+  font-size: 14px;
+}
+
+.panel-heading h2 {
+  font-size: 18px;
+}
+
+.select-like {
+  font-size: 13px;
+}
+
+.chart-footnote,
+.dashboard-disclaimer,
+.table-note {
+  color: #56617f;
+}
+
+.activity-row small,
+.checklist-item small,
+.ministry-note-strip small,
+.oversight-notice small,
+.priority-list small {
+  color: #56617f;
+}
+
+.metric-card > small {
+  color: #fff;
+}
+
+.ministry-note-strip > a {
+  color: #fff;
+}
+
+.table-wrap table {
+  min-width: 760px;
+}
+
+.auth-aside > p,
+.register-intro > p {
+  color: #4e5a78;
+  font-size: 16px;
+}
+
+.auth-benefits,
+.auth-card-heading p,
+.register-heading p,
+.form-stack > label,
+.form-stack input:not([type="checkbox"]),
+.form-stack select,
+.form-stack textarea,
+.checkbox-label,
+.form-row-between > a,
+.auth-role-links a,
+.form-helper,
+.auth-divider span,
+.auth-role-links,
+.auth-footer,
+.register-safety-note strong,
+.register-safety-note small,
+.account-type-card > strong,
+.account-type-card > small,
+.account-link,
+.register-callout strong,
+.register-callout a {
+  font-size: 14px;
+}
+
+.auth-card-heading p,
+.register-heading p,
+.form-helper,
+.register-safety-note small,
+.account-type-card > small,
+.auth-role-links,
+.auth-footer {
+  color: #56617f;
+}
+
+.form-stack input:not([type="checkbox"]),
+.form-stack select,
+.form-stack textarea {
+  min-height: 48px;
+}
+
+.button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline-color: #4e1fd6;
+}
+
+@media (max-width: 960px) {
+  .hero-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header-inner {
+    gap: 8px;
+  }
+
+  .mobile-login {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .header-actions .button {
+    font-size: 13px;
+  }
+
+  .hero-description,
+  .feature-card p,
+  .section-heading p,
+  .faq-copy p,
+  .faq-list details p,
+  .banner-copy p {
+    font-size: 14px;
+  }
+
+  .feature-card h3 {
+    font-size: 15px;
+  }
+
+  .step-item strong {
+    font-size: 13px;
+  }
+
+  .top-search input {
+    font-size: 13px;
+  }
+
+  .activity-row time {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header-inner {
+    width: calc(100% - 32px);
+  }
+
+  .hero-actions .button {
+    font-size: 13px;
+  }
+
+  .impact-card small,
+  .feature-card p {
+    font-size: 13px;
+  }
+
+  .feature-card h3 {
+    font-size: 14px;
+  }
+
+  .footer-contact span {
+    font-size: 12px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .footer-main > *,
+  .footer-social {
+    min-width: 0;
+  }
+
+  .social-links {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .steps-grid {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .step-item,
+  .step-arrow {
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 1201px) {
+  .steps-grid {
+    gap: 5px;
+  }
+
+  .step-item small {
+    font-size: 13px;
+  }
+}
+
+.safety-promo-overlay p,
+.safety-promo-overlay .button {
+  font-size: 13px;
+}
+
+.breadcrumb,
+.chart-legend,
+.legend-muted,
+.chart-y-labels,
+.bar-column small,
+.chart-footnote,
+.quick-action small,
+.activity-row small,
+.activity-row time,
+.checklist-item small,
+.dashboard-disclaimer,
+.table-wrap th,
+.table-note,
+.top-search input::placeholder,
+.form-stack input::placeholder {
+  color: #56617f;
+}
+
+.pending-text,
+.badge-pending {
+  color: #76500b;
+}
+
+.check-state {
+  color: #087553;
+}
+
+.metric-blue {
+  background: linear-gradient(135deg, #0e63ca, #0750c8);
+}
+
+.metric-teal {
+  background: linear-gradient(135deg, #008a70, #006f5d);
+}
+
+.metric-amber {
+  background: linear-gradient(135deg, #a85f00, #814700);
+}
+
+.ministry-policy-card .button {
+  font-size: 13px;
+}
+
+.social-placeholder {
+  margin: 0;
+  color: #dbe2ff;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.account-settings-panel {
+  margin-bottom: 14px;
+}
+
+.account-type-card:hover {
+  transform: none;
+  border-color: #e6e8f7;
+  box-shadow: none;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.72;
+  box-shadow: none;
+}
+
+@media (max-width: 960px) {
+  .site-header {
+    height: auto;
+  }
+
+  .site-header-inner {
+    width: calc(100% - 32px);
+    height: auto;
+    min-height: 70px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px 12px;
+    padding: 8px 0;
+  }
+
+  .brand-public {
+    order: 1;
+  }
+
+  .header-actions {
+    order: 2;
+  }
+
+  .mobile-login {
+    order: 3;
+  }
+
+  .main-nav {
+    display: flex;
+    order: 4;
+    flex: 1 0 100%;
+    min-width: 0;
+    height: 38px;
+    justify-content: flex-start;
+    gap: 18px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .main-nav .nav-link {
+    flex: 0 0 auto;
+    height: 38px;
+    font-size: 13px;
+  }
+
+  .uganda-flag {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header-inner {
+    gap: 6px 8px;
+  }
+
+  .app-sidebar {
+    position: relative;
+    display: block;
+    height: auto;
+    min-height: 0;
+    padding: 8px 13px;
+  }
+
+  .brand-sidebar,
+  .sidebar-role,
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 7px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+  }
+
+  .sidebar-link {
+    flex: 0 0 auto;
+    min-height: 40px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+}
